@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px 40px;
+    font-family: 'Raleway';
+    background-color: rgba(0,0,0,.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+}
+
+.message-container {
+    color: black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.single-msg-container:nth-of-type(even) {
+    align-self: flex-end;
+}
+
+
+/* this controls the row-reverse for .msg-and-username div */
+.right {
+    flex-direction: row-reverse;
+}
+
+
+
+/* div that contains the username and message text */
+.msg-and-username {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.username {
+    color: grey;
+    font-weight: bold;
+}
+
+.msg {
+    padding: 5px 10px;
+    border: 2px 10px;
+    background-color: #45b4f9;
+    color: white;
+    border-radius: 15px;
+}
+
+.showMore {
+    position: absolute;
+    margin-top: 20px;
+}

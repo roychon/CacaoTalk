@@ -1,0 +1,14 @@
+1. Create HTML Boiler Plate
+
+2. Create a form
+    - username
+    - email
+    - password
+    - password confirm
+    - SUBMIT to "invisible" backend file (add_user.php)
+
+3. Link to sign_in.php
+
+4. JS for frontend validation
+    - regex
+    - Block submit button until all is good (preventDefault)

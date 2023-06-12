@@ -1,0 +1,16 @@
+1. Validate the form data
+    - if invalid, send them back to sign_up.php
+        - $_POST array is not empty
+            - if not empty, check username, password are ALL not empty
+
+2. Connect to DB and prepare a select query where username = ?
+
+3. Execute and Fetch (may or may not retrieve a user)
+
+4. 
+
+5. If password_verify() returns true and we got a user, sign them in
+    - Save their username and id in SESSION variables
+    - Redirect them to the chat page
+
+6. If anything went wrong, send them back to sign_in.php with an error message

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form p {
+    margin-top: 20px;
+}
+
+form p span {
+    display: none;
+}
+
+input {
+    outline: none;
+}
+
+.red {
+    border: 1px solid red;
+}
+
+.green {
+    border: 1px solid green;
+}

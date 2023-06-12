@@ -1,0 +1,12 @@
+1. Validate the form data
+    - if invalid, send them back to sign_up.php
+        - $_POST array is not empty
+            - if not empty, check username, email, password, password confirm are ALL not empty
+                - use regex once more (filter_var for email)
+    - if valid, connect to DB
+    - prepare INSERT query
+    - bind params and execute (HASH password here)
+
+    - if everything goes well, send them back to sign_in.php
+    - if something was not good, send them back to sign_up.php with an error message
+
