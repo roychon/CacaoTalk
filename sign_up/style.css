@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600&display=swap');
 
 :root {
     --yellow: rgb(246, 222, 11);
-    --brown: rgb(55,30,29);
+    --brown: rgb(80, 54, 54);
 }
 
 * {
@@ -23,23 +23,88 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 0;
+}
+
+.outer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(249, 212, 217);
+  transform: skewY(-30deg);
+}
+
+.outer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(249, 212, 217);
+  transform: skewY(-30deg);
 }
 
 .right, .left {
     width: 30%;
     height: 80%;
-}
-
-.right {
-    background-color: white;
-}
-
-.left {
-    background-color: var(--yellow);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+}
+
+.right {
+    background-color: white;
+    align-items: flex-start;
+    padding-left: 30px;
+    gap: 30px;
+}
+
+.right h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* separate username, email, password divs */
+.right div {
+    margin-bottom: 20px;
+}
+
+.right p {
+    margin: 0;
+}
+
+input {
+    outline: none;
+    padding: 2px 0;
+}
+
+#submit {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--brown);
+    color: var(--yellow);
+    transition: color .4s ease;
+}
+
+#submit:hover {
+    background: black;
+    color: white;
+}
+
+.left {
+    background-color: var(--yellow);
+    gap: 30px;
 }
 
 .left #title {
@@ -49,19 +114,24 @@ body {
 }
 
 .left img {
-    width: 80%;
+    height: 50%;
 }
 
 form p {
     margin-top: 20px;
 }
 
-form p span {
+form p span.hide-error {
     display: none;
 }
 
-input {
-    outline: none;
+form p span.show-error {
+    background: lightgray;
+    padding: 0 10px;
+    border: none;
+    border-radius: 20px;
+    display: inline;
+    font-size: .8rem;
 }
 
 .red {
@@ -70,4 +140,22 @@ input {
 
 .green {
     border: 1px solid green;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(250, 129, 169);
+    transition: color .4s ease;
+}
+
+a:hover {
+    color: black;
+}
+
+.error-msg {
+    color: white;
+    padding: 0 10px;
+    border: none;
+    background-color: red;
+    border-radius: 20px;
 }

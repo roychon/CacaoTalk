@@ -3,11 +3,11 @@ function checkName(n) {
     console.log(errorMsg);
     if (n.value.length < 3 || n.value.split(" ").length > 1) {
         userName.className = 'red';
-        errorMsg.style.display = 'inline';
+        errorMsg.className = 'show-error';
         return false;
     } else {
         userName.className = 'green';
-        errorMsg.style.display = 'none';
+        errorMsg.className = 'hide-error';
         return true;
     }
 }
@@ -17,11 +17,11 @@ function checkEmail(email) {
     const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (!regex.test(email.value)) {
         email.className = 'red';
-        errorMsg.style.display = 'inline';
+        errorMsg.className = 'show-error';
         return false;
     } else {
         email.className = 'green';
-        errorMsg.style.display = 'none';
+        errorMsg.className = 'hide-error';
         return true;
     }
 }
@@ -31,11 +31,11 @@ function checkPassword(pw) {
     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$&]){8,30}/;
     if (!regex.test(pw.value)) {
         pw.className = 'red';
-        errorMsg.style.display = 'inline';
+        errorMsg.className = 'show-error';
         return false;
     } else {
         pw.className = 'green';
-        errorMsg.style.display = 'none';
+        errorMsg.className = 'hide-error';
         return true;
     }
 }
@@ -45,11 +45,11 @@ function recheckPassword(pwCheck) {
     const originalPw = pw.value;
     if (pwCheck.value !== originalPw || originalPw == '') {
         pwCheck.className = 'red';
-        errorMsg.style.display = 'inline';
+        errorMsg.className = 'show-error';
         return false;
     } else {
         pwCheck.className = 'green';
-        errorMsg.style.display = 'none';
+        errorMsg.className = 'hide-error';
         return true;
     }
 }

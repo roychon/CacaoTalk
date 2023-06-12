@@ -23,7 +23,7 @@ if (password_verify($_POST['pw'], $user->password)) {
     session_start();
     $_SESSION['username'] = $user->username;
     $_SESSION['id'] = $user->id;
-    header("Location: http://localhost/sites/sql/cacaoTalk_ajax/");
+    header("Location: http://localhost/sites/sql/cacaoapp/cacaoTalk_ajax/");
 } else {
     header("Location: sign_in.php?error=1");
 }
