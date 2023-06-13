@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="./sign_in.js"></script> -->
 
 </head>
 
@@ -45,7 +44,7 @@
 
             </form>
 
-            <p>Don't have an account? <a href="sign_up.php">Sign up</a> here</p>
+            <p>Don't have an account? <a href="../index.php">Sign up</a> here</p>
 
             <?php
             if (!empty($_GET['error'])) {

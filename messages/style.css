@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P';
+
+}
+
+section {
+    background: url(./img/1920x1080-night-and-computer-pixel-rwallpaper.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.message-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 380px;
+    width: 100%;
+    overflow-y: auto;
+    gap: 10px;
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+
+/* white border for messages */
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid whitesmoke;
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* black background on text */
+.message {
+    background: rgba(0,0,0,.7);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.message div {
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: .6rem;
+}
+
+.message-container .right {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.user-msg {
+    gap: 10px;
+}
+
+/* row reverse right side messages */
+.right .user-msg {
+    flex-direction: row-reverse;
+}
+
+/* for other users, not one currently logged in */
+.message-container .left {
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* light blue username */
+.username {
+    background: lightcyan;
+    color: rgb(44, 25, 168);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* yellow + black text message */
+.textmsg {
+    padding: 3px;
+    background: lightyellow;
+    color: black;
+    border-radius: 10px;
+}
+
+button, input[type=submit] {
+    border: none;
+    margin-top: 20px;
+    font-family: 'Press Start 2P';
+    padding: 10px;
+    background: rgb(182, 201, 244);
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin-left: 20px;
+    margin-top: 100px;
+    color: white;
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    padding: 20px 10px;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}

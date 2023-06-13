@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="sign_up.js"></script>
+    <link rel="stylesheet" href="./sign_up/style.css">
+    <script defer src="./sign_up/sign_up.js"></script>
 </head>
 <body>
     <div class="outer">
         <div class="left">
             <h1 id="title">Cacao Talk 🍩</h1>
-            <img src="img/bear3-removebg-preview.png" alt="Cacao Talk Bear">
+            <img src="./sign_up/img/bear3-removebg-preview.png" alt="Cacao Talk Bear">
         </div>
         <div class="right">
     
@@ -57,7 +57,7 @@
     
         </form>
     
-        <p>Already have an account? <a href="sign_in.php">Sign in</a> here</p>
+        <p>Already have an account? <a href="./sign_up/sign_in.php">Sign in</a> here</p>
     
         <?php
             if (!empty($_GET['error'])) {

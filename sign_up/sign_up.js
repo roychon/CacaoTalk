@@ -63,7 +63,7 @@ function checkAllInput(e) {
         // prevent from submitting invalid form
         e.preventDefault();
     } else {
-        alert("good form");
+        alert("Thanks for signing in!");
     }
 }
 
