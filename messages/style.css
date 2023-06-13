@@ -88,6 +88,7 @@ section {
     color: rgb(44, 25, 168);
     padding: 5px;
     border-radius: 10px;
+    max-width: 300px;
 }
 
 /* yellow + black text message */
@@ -96,6 +97,7 @@ section {
     background: lightyellow;
     color: black;
     border-radius: 10px;
+    max-width:400px;
 }
 
 button, input[type=submit] {

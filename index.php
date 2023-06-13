@@ -16,12 +16,12 @@
         <div class="right">
     
         <h1>Sign Up</h1>
-        <form action="add_user.php" method="POST" id='signUpForm'>
+        <form action="./sign_up/add_user.php" method="POST" id='signUpForm'>
             <div>
                 <label for="name">Username: </label>
                 <p>
                     <input type="text" name="userName" id="userName">
-                    <span class="hide-error">Length must exceed 3</span>
+                    <span class="hide-error">Length must exceed 3 and less than 20</span>
                 </p>
             </div>
     

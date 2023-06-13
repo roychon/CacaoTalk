@@ -1,7 +1,7 @@
 function checkName(n) {
     const errorMsg = n.nextElementSibling;
     console.log(errorMsg);
-    if (n.value.length < 3 || n.value.split(" ").length > 1) {
+    if (n.value.length < 3 || n.value.split(" ").length > 1 || n.value.length > 20) {
         userName.className = 'red';
         errorMsg.className = 'show-error';
         return false;
