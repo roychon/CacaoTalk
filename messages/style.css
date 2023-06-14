@@ -22,8 +22,6 @@ section {
     color: white;
 }
 
-
-
 .message-container {
     display: flex;
     flex-direction: column-reverse;
@@ -121,4 +119,26 @@ h1 {
     padding: 20px 10px;
     backdrop-filter: blur(2px);
     border-radius: 20px;
+}
+
+input[type=text] {
+    outline: none;
+    border: none;
+    padding: 5px 5px;
+    font-family: 'Comfortaa';
+}
+
+@media (max-width: 480px) {
+    section {
+        position: relative;
+        background: url(./img/833312.png);
+    }
+
+    button {
+        margin-bottom: 20px;
+    }
+
+    input[type=text] {
+        margin-top: 10px;
+    }
 }

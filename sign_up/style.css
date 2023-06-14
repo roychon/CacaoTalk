@@ -159,3 +159,18 @@ a:hover {
     background-color: red;
     border-radius: 20px;
 }
+
+@media (max-width: 480px) {
+    .right, .left {
+        width: 100%;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left img {
+        height: 30%;
+    }
+
+}
